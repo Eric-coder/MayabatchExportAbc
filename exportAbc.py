@@ -58,8 +58,10 @@ def exportAbc(path, singleFrame=False, frameRange=None, objects=[], step_num=0.2
     pm.mel.eval(cmd)
     
 def RunExport(path,filters='',publishPath =''):
-    print (path.split('#'))
-    # cmds.file(path, o=1,f=1)
-    # objs = getObject(filters)
-    # exportAbc((os.path.splitext(path)[0]+'.abc'),objects =objs)
+    paths = path.split('#')
+    paths.pop(-1)
+    for i in paths:
+        cmds.file(i, o=1,f=1)
+        objs = getObject(filters)
+        exportAbc((os.path.splitext(i)[0]+'.abc'),objects =objs)
 
