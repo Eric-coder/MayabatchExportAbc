@@ -115,8 +115,11 @@ class MainView(QtWidgets.QDialog):
             maPath = maFilePath,
             currentFolder = currentFolder,
             )
-
-        subprocess.call(cmd,shell=True)
+        if publishPath=='':
+            QtGui.QMessageBox.information(self,"Information",u'请选择输出路径')
+        else:
+            subprocess.call(cmd,shell=True)
+        QtGui.QMessageBox.information(self,"Information",u'完成所有输出,请关闭工具')
 
 
 if __name__ == '__main__':
