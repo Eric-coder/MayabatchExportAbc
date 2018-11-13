@@ -8,6 +8,6 @@ python "reload(exportAbc)";
 python "exportAbc.RunExport(sys.argv[-2],filters = sys.argv[-3],publishPath = sys.argv[-4])";
 
 //python "print sys.argv";
-//python "print 'wuxingcan'";
+
 
 
