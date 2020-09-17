@@ -10,6 +10,6 @@ Maya后台批量导出abc缓存文件
 
     1：运行bat文件，填写符合相应过滤字段的缓存名称
     
-    2：将待输出的文件拖入框内即可12345444
+    2：将待输出的文件拖入框内即可12345444fds
 
 ![image](https://github.com/WangTianX/MayabatchExportAbc/blob/master/image/MayaExport.png)
